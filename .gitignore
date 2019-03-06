@@ -1,0 +1,6 @@
+# dependencies (run npm install to get them back!)
+node_modules/
+package-lock.json
+
+# server log, will be generated again on your machine
+server.log

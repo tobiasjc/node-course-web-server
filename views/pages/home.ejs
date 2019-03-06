@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../partials/head %>
+    <a href="/about">About</a>
+  </head>
+
+  <body>
+    <h1>Home Page</h1>
+    <p>Likes:</p>
+    <ul>
+      <% creator.likes.forEach((likes) => {%>
+      <li><%= likes %></li>
+      <% }); %>
+    </ul>
+    <footer>
+      <% include ../partials/footer %>
+    </footer>
+  </body>
+</html>
