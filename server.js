@@ -42,10 +42,6 @@ app.get(/^\/(home|)$/, (req, res) => {
   });
 });
 
-// app.get("/about", (req, res) => {
-//   res.send("About page");
-// });
-
 app.get("/about", (req, res) => {
   res.render("pages/about.ejs", {
     h: helpers,
