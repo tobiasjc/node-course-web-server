@@ -1,6 +1,7 @@
 const express = require("express");
 const helpers = require("./helpers/textFormat");
 const fs = require("fs");
+const port = process.env.PORT || 3000;
 
 const app = express();
 const contentPath = "/public";
@@ -54,4 +55,4 @@ app.get("/bad", (req, res) => {
   res.send({ errorMessage: "Unable to handle request" });
 });
 
-app.listen(3000, () => console.log("Server is up on port 3000"));
+app.listen(port, () => console.log(`Server is up on port ${port}`));
